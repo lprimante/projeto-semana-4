@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+}
+
+body {
+    max-width: 960px;
+    min-width: 320px;
+}
+
+h1, h2, p, li, a {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    background-image: url(img/bg-banner-claro.png);
+    background-size: cover;
+    object-position: center;
+    padding: 10%;
+}
+
+.header {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header h1 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.header p {
+
+}
+
+.hidden-gt-360 {
+    display: none;
+}
+
+.purple-button {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    background-color: #b288c0;
+    padding: 10px;
+}
+
+.nav-bar {
+    background-color: #63458a;
+    padding: 2% 8%;
+}
+
+.nav-bar > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar img {
+    width: 35%;
+}
+
+img.menu {
+    width: 24px;
+}
+
+.do-you-know h2, .do-you-know p {
+    color: #63458a;
+}
+
+.we-can {
+    background-color: #7e5a9b;
+}
+
+.we-can > div {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.we-can img {
+    width: 40%;
+}
+
+.grid-section-2 {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 1em;
+}
+
+.img-grid-section-2 {
+    background-color: #63458a;
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.devs {
+    background-color: #63458a;
+}
+
+.grid-section-3 {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-gap: 2em;
+}
+
+.img-grid-section-3 {
+    background-color: white;
+    width: 100%;
+    height: 60px;
+}
+
+.footer-top {
+    background-color: #353535;
+}
+
+.logo-footer {
+    width: 40%;
+}
+
+.footer-bottom {
+    background-color: #202020;
+}
