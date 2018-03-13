@@ -2,57 +2,43 @@
     margin: 0;
 }
 
-body {
-    max-width: 960px;
+html {
     min-width: 320px;
 }
 
-h1, h2, p, li, a {
+section > div {
+    margin: auto;
+    padding: 24px 8px;
+}
+
+h1 {
+    color: white;    
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+h2 {
+    color: white;    
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 20px;
+    margin: 0 auto 24px auto;
+    width: 300px;
+    text-align: center;
+}
+
+p, li, a {
     color: white;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
     text-decoration: none;
     list-style: none;
 }
 
-header {
-    background-image: url(img/bg-banner-claro.png);
-    background-size: cover;
-    object-position: center;
-    padding: 10%;
-}
-
-.header {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.header h1 {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-.header p {
-
-}
-
-.hidden-gt-360 {
-    display: none;
-}
-
-.purple-button {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 16px;
-    background-color: #b288c0;
-    padding: 10px;
-}
-
 .nav-bar {
     background-color: #63458a;
-    padding: 2% 8%;
+    padding: 1% 8%;
 }
 
 .nav-bar > div {
@@ -62,72 +48,206 @@ header {
 }
 
 .nav-bar img {
-    width: 35%;
+    width: 120px;
 }
 
 img.menu {
+    display: inherit;
     width: 24px;
+}
+
+header {
+    background-image: url(img/bg-banner-claro.png);
+    background-size: cover;
+    background-position-x: center;
+    padding: 10%;
+}
+
+.header {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header p {
+    margin-bottom: 24px;
+}
+
+.hidden-gt-360 {
+    display: none;
+}
+
+.purple-button {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;    
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    background-color: #b288c0;
+    padding: 8px 24px;
+    border-radius: 4px;
+}
+
+.we-can {
+    background-color: #7e5a9b;
+    text-align: center;    
+}
+
+.we-can img {
+    width: 120px;
+}
+
+.we-can p {
+    width: 268px;
+    margin: 0 auto 8px auto;
+    line-height: 1.5em;
+}
+
+.do-you-know {
+    text-align: center;
 }
 
 .do-you-know h2, .do-you-know p {
     color: #63458a;
 }
 
-.we-can {
-    background-color: #7e5a9b;
-}
-
-.we-can > div {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.we-can img {
-    width: 40%;
-}
-
 .grid-section-2 {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 24px auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    grid-gap: 1em;
+    grid-gap: 1.6em;
+    text-align: center;
 }
 
 .img-grid-section-2 {
     background-color: #63458a;
     width: 100%;
+    max-width: 120px;
     height: 120px;
     border-radius: 10px;
 }
 
 .devs {
     background-color: #63458a;
+    text-align: center;
 }
 
 .grid-section-3 {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 24px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-gap: 1em;
 }
 
 .img-grid-section-3 {
     background-color: white;
     width: 100%;
-    height: 60px;
+    max-width: 80px;
+    height: 80px;
 }
 
 .footer-top {
     background-color: #353535;
+    padding: 24px;
 }
 
-.logo-footer {
-    width: 40%;
+.footer-top ul {
+    text-align: center;
+    padding: 0;
+}
+
+.footer-top li {
+    margin-bottom: 8px;
+}
+
+.footer-top > nav {
+    margin: 0 auto 24px auto;
+}
+
+.enterprise {
+    margin: 0 auto 24px auto;
+    text-align: center;
+}
+
+.enterprise img {
+    width: 160px;
+}
+
+.medias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+    margin: 0 auto;
+}
+
+.medias img {
+    width: 24px;
 }
 
 .footer-bottom {
     background-color: #202020;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 10px;
+}
+
+@media (min-width: 361px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    img.menu {
+        display: none;
+    }
+
+    .hidden-gt-360 {
+        display: inherit;
+    }
+
+    .nav-bar img {
+        width: 200px;
+    }
+
+    .nav-bar li {
+        margin-left: 80px;
+        text-transform: uppercase;
+    }
+
+    header {
+        position: relative;
+    }
+    .header {
+        position: absolute;
+        bottom: 50px;
+    }
+
+    .we-can img {
+        width: 210px;
+    }
+
+    .we-can p {
+        width: 800px;
+        margin: 0 auto 8px auto;
+        line-height: 1.5em;
+    }
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-top nav, .footer-top div {
+        width: 160px;
+    }
+
+    .footer-top li {
+        text-align: left;
+    }
 }
