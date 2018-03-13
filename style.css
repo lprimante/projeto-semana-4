@@ -112,6 +112,7 @@ header {
 
 .grid-section-2 {
     width: 80%;
+    max-width: 500px;
     margin: 0 auto 24px auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -199,7 +200,8 @@ header {
 @media (min-width: 361px) {
 
     h1 {
-        font-size: 40px;
+        font-size: 35px;
+        text-shadow: gray;
     }
 
     img.menu {
@@ -221,10 +223,18 @@ header {
 
     header {
         position: relative;
+        height: 240px;
     }
     .header {
+        text-align: left;        
+        width: 600px;
         position: absolute;
         bottom: 50px;
+        left: 50px;
+    }
+
+    .header p {
+        text-align: left;
     }
 
     .we-can img {
