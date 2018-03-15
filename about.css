@@ -8,7 +8,13 @@ html {
 
 section > div {
     margin: auto;
-    padding: 16px 32px;
+    padding: 24px 8px;
+}
+
+div.texts {
+    width: 70%;
+    margin: auto;
+    padding: 24px 8px;    
 }
 
 h1 {
@@ -22,7 +28,8 @@ h2 {
     color: white;    
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 20px;
-    margin: 0 auto 24px auto;
+    margin: 32px auto 16px auto;
+    width: 200px;
     text-align: center;
 }
 
@@ -32,6 +39,19 @@ p, li, a {
     font-size: 14px;
     text-decoration: none;
     list-style: none;
+}
+
+p {
+    margin: 0 auto 8px auto;
+}
+
+span {
+    display: block;
+    margin: 24px auto 4px auto;
+    font-size: 48px;
+    color: black;
+    font-weight: 900;
+    text-align: center;
 }
 
 .hidden-gt-360 > li > a {
@@ -62,6 +82,7 @@ header {
     background-image: url(img/bg-banner-escuro.png);
     background-size: cover;
     background-position-x: center;
+    background-position-y: center;
     height: 120px;
     position: relative;
 }
@@ -82,35 +103,8 @@ header {
     display: none;
 }
 
-.title h2, .title p {
-    margin: 0 auto 8px auto;
+.about h2, .about p {
     color: #63458a;
-}
-
-.title img {
-    display: block;
-    margin: 0 auto 16px auto;
-    width: 100%;
-    max-width: 120px;
-    object-fit: cover;
-    object-position: initial;
-    height: 160px;
-    border-radius: 10px;
-}
-
-.highlighted > div {
-    margin: 0 32px;
-    padding: 5px;
-    border: 1px solid #63458a;
-    border-radius: 5px;
-}
-
-.highlighted p {
-    text-align: center;
-    padding: 5px;
-    color: #63458a;
-    font-size: 18px;
-    font-weight: 700;
 }
 
 .purple-container {
@@ -119,28 +113,42 @@ header {
     margin-bottom: 16px;
 }
 
-.her-history h2, .her-history p {
-    margin: 0 auto 8px auto;
-    color: #63458a;
+.span {
+    margin: 32px auto 16px auto;
 }
 
-.card > div {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: #e4b7e5;
+.devs {
+    background-image: linear-gradient(to right, #63458a, #7e5a9b);
+    text-align: center;
+}
+
+.grid-section-3 {
+    width: 80%;
+    max-width: 600px;    
+    margin: 0 auto 24px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-gap: 1em;
+}
+
+.img-grid-section-3 {
+    background-color: white;
+    width: 100%;
+    max-width: 80px;
     height: 80px;
     margin: 0 auto;
+    position: relative;
 }
 
-.card > div > img {
-    width: 60px;
-    height: 70px;
-    margin-right: 15px;
-}
-
-.card-texts p, .card-texts a {
+.img-grid-section-3 > p {
     color: #63458a;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 1px;
+    margin-bottom: 1px;
+    font-size: 11px;
+    line-height: 1em;
 }
 
 .footer-top {
@@ -196,11 +204,20 @@ header {
 
     h1 {
         font-size: 35px;
+        width: 600px;
     }
 
     h2 {
         font-size: 25px;
-        width: 80%;
+        width: 600px;        
+    }
+
+    span {
+        display: inline;
+    }
+
+    .span p {
+        text-align: center;
     }
 
     img.menu {
@@ -222,7 +239,7 @@ header {
 
     header {
         position: relative;
-        height: 500px;
+        height: 240px;
     }
     .header {
         text-align: left;        
@@ -234,6 +251,10 @@ header {
 
     .header p {
         text-align: left;
+    }
+
+    .texts {
+        padding: 24px 0;
     }
 
     .footer-top {
